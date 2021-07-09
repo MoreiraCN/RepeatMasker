@@ -14,7 +14,7 @@ The following pipeline was used to identify repetitive DNA content of assembled 
 
 `/RepeatModeler -database sample_name.DB -engine ncbi`
 
-**Step 3 > Alignment (filtered libraries 0B, 1B, and probes against assembled genome 0B):**
+**Step 3 > Masking:**
 
 `/RepeatMasker perl -pa 20 -gff -lib /repeatmodeler/sample_name/consensi.fa.classified -s -a -dir RepeatMasker_sample_name assembly.fa`
 
