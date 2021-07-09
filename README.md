@@ -1,6 +1,6 @@
 ### RepeatMasker
 
-The following pipeline was used to identify repetitive DNA content of [assembled](https://github.com/MoreiraCN/Assembling_Illumina_sequences) genome of the species *Holochilus sciureus* (2n = 56, NF = 56), a Neotropical rodent of tribe Oryzomyini.
+The following pipeline was used to identify repetitive DNA content of assembled genome of the species *Holochilus sciureus* (2n = 56, NF = 56), a Neotropical rodent of tribe Oryzomyini.
 
 **Softwares used:**
 
