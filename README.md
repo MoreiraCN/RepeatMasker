@@ -2,11 +2,11 @@
 
 The following pipeline was used to identify repetitive DNA content of assembled genome of the species *Holochilus sciureus* (2n = 56, NF = 56), a Neotropical rodent of tribe Oryzomyini.
 
-**Softwares used:**
+**Software used:**
 
 [RepeatMasker_version_4.1.1](https://www.repeatmasker.org/). Tarailo‐Graovac M, Chen N (2009) Using RepeatMasker to identify repetitive elements in genomic sequences. Curr Protoc Bioinformatics, 25(1):4-10.
 
-**Step 1 > BuildDatabase (preparing the data for build a repeat library):**
+**Step 1 > BuildDatabase (preparing the data to build a repeat library):**
 
 `/BuildDatabase -name sample_name.DB -engine rmblast assembly.fa`
 
