@@ -22,6 +22,15 @@ The following pipeline was used to identify repetitive DNA content of assembled 
 
 `/RepeatMasker perl -pa 20 -gff -lib /repeatmodeler/sample_name/consensi.fa.classified -s -a -dir RepeatMasker_sample_name assembly.fa`
 
+**Step 4 > Landscape (step 1):**
+
+`/repeatmasker_rmblast /RepeatMasker/util/calcDivergenceFromAlign.pl -s landscape_step1_sample_name.sumary -a landscape_step1_sample_name.align /RepeatMasker_sample_name/sample_name_assembly.fasta.align`
+
+**Step 5 > Landscape:**
+
+`/repeatmasker_rmblast /RepeatMasker/util/createRepeatLandscape.pl -div landscape_step1_sample_name.sumary -g genome_size > sample_name_landscape.html`
+
 **Parameters used:**
  
 - All parameters used are available at [Using and understanding RepeatMasker](https://link.springer.com/protocol/10.1007/978-1-61779-603-6_2) and [TETools](https://github.com/Dfam-consortium/TETools).
+- For genome size use: `grep -v '>' | wc -c sample_name_assembly.fasta.align`
